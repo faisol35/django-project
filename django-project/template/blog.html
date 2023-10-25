@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MY APP</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Welocome to Restoran Sederhana Apps</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="/192.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Le Catering</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="/img./tablesetting2.jpg" class="w3-round w3-image w3-opacity-min" alt="192.jpg" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Tentang Kami</h1><br>
+      <h5 class="w3-center">Beridiri Sejak 1927</h5>
+      <p class="w3-large">Restoran Sederhana berawal pada tahun 1972 dari sebuah rumah makan Padang kecil milik Bustaman di Pasar Bendungan Hilir, Jakarta. Dalam mengelola restorannya, Bustaman yang berasal dari Lintau, Sumatera Barat, selalu menyesuaikannya dengan lidah orang kebanyakan, sehingga ia mengurangi rasa pedas dalam masakan Padang buatannya. Ia juga memiliki hidangan khusus, yakni Ayam Pop yang telah dikenal luas </p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Saat ini, lebih dari 100 restoran Sederhana tersebar di berbagai kota di Indonesia dan Malaysia. Restoran Sederhana telah melayani pesanan online untuk seluruh indonesia, kecuali Provinsi Papua. Hingga saat ini, jaringan Restoran Sederhana adalah jaringan rumah makan Padang terbesar di Indonesia.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Menu</h1><br>
+      <h4> Ayam Panggang</h4>
+      <p class="w3-text-grey">Ayam yang di panggang selama 1jam dengan suhu 50'c (15k)</p><br>
+    
+      <h4>Ayam goreng getok</h4>
+      <p class="w3-text-grey">Di sajikan dengan aroma ayam kampung getok (10k)</p><br>
+    
+      <h4>Nasi putih sultan</h4>
+      <p class="w3-text-grey">sajian gandum madura yang special (5k)</p><br>
+    
+      <h4>Teh Manis (Cold/hot)</h4>
+      <p class="w3-text-grey">racikan daun teh yang menghasilkan aroma bunga melati (7k)</p><br>
+    
+      <h4>Air Putih (Cold/hot)</h4>
+      <p class="w3-text-grey">air dari pegunungan asli yang di ambil sebelum matahri terbit (3k)</p>    
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="/w3images/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+    <p>Kami menawarkan layanan katering lengkap untuk acara apa pun, besar atau kecil. Kami memahami kebutuhan Anda dan kami akan menyediakan makanan untuk memenuhi kriteria terbesar, baik tampilan maupun rasa. Jangan ragu untuk menghubungi kami..</p>
+    <p class="w3-text-blue-grey w3-large"><b>Layanan Catering, Jln. Nusakambangan Ds. Nusa Kab. Malaya</b></p>
+    <p>Anda juga dapat menghubungi kami melalui telepon 0813-3123-2323 atau email restoransederhana@gmail.com, atau Anda dapat mengirimkan pesan kepada kami di sini:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Nama" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="Jumlah pesanan" required name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="ketikan pesanan anda" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+
+</body>
+</html>
